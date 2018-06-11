@@ -12,7 +12,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavService } from './sidenav/sidenav.service';
 import { SidenavDirective } from './sidenav/sidenav.directive';
 import { Test2Component } from './test-components/test2/test2.component';
-import { DefaultContainerComponent } from './containers/default-container/default-container.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { DefaultContainerComponent } from './containers/default-container/defaul
     Test1Component,
     SidenavComponent,
     SidenavDirective,
-    Test2Component,
-    DefaultContainerComponent
+    Test2Component
   ],
   imports: [
     BrowserModule,
