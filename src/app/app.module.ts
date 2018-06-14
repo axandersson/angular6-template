@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { NavigationStart, Router } from '@angular/router';
 import { MaterialModule } from './material-module';
 import { NgModule } from '@angular/core';
