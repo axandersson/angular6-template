@@ -1,6 +1,10 @@
 # Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+This is an Angular 6 template application. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+
+## Live demo
+
+A live demo can be found [here](https://stackblitz.com/github/axandersson/angular6-template).
 
 ## Development server
 
