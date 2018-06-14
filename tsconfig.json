@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@interfaces/*": ["src/app/interfaces/*"],
-      "@services/*": ["src/app/services/*"]
+    //  "@app/*": ["src/app/*"],
+    //  "@interfaces/*": ["src/app/interfaces/*"],
+    //  "@services/*": ["src/app/services/*"]
     },    "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
