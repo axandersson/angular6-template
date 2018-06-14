@@ -12,6 +12,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavService } from './sidenav/sidenav.service';
 import { SidenavDirective } from './sidenav/sidenav.directive';
 import { Test2Component } from './test-components/test2/test2.component';
+import { Test3Component } from './test-components/test3/test3.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { Test2Component } from './test-components/test2/test2.component';
     Test1Component,
     SidenavComponent,
     SidenavDirective,
-    Test2Component
+    Test2Component,
+    Test3Component,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +32,11 @@ import { Test2Component } from './test-components/test2/test2.component';
     FlexLayoutModule,
     AppRoutingModule,
     MaterialModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [
     SidenavService
