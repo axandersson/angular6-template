@@ -7,17 +7,12 @@
   box-shadow: 3px 0 6px rgba(0,0,0,.24);
 }
 
-.sidenav-content {
-  min-height: 100vh;
-}
+
 
 .sidenav-toolbar {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   max-width: 100%;
 }
 
-.sidenav-grid-container {
-  margin: 6em 2em 6em 2em;
-}
 

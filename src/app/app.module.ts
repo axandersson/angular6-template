@@ -8,13 +8,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { Test1Component } from './test-components/test1/test1.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { SidenavService } from './sidenav/sidenav.service';
-import { SidenavDirective } from './sidenav/sidenav.directive';
-import { Test2Component } from './test-components/test2/test2.component';
-import { Test3Component } from './test-components/test3/test3.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidenavComponent } from './shared/sidenav/sidenav.component';
+import { SidenavService } from './shared/sidenav/sidenav.service';
+import { SidenavDirective } from './shared/sidenav/sidenav.directive';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { ContainerComponent } from './shared/container/container.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +21,8 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
     Test1Component,
     SidenavComponent,
     SidenavDirective,
-    Test2Component,
-    Test3Component,
-    DashboardComponent
+    DashboardComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

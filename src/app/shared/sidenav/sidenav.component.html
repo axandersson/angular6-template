@@ -1,0 +1,54 @@
+<mat-toolbar color="primary" class="mat-elevation-z16 sidenav-toolbar">
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+    *ngIf="isHandset$ | async">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <ng-container #vcr></ng-container>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar>  
+      <mat-toolbar-row></mat-toolbar-row>
+      <mat-toolbar-row></mat-toolbar-row>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <a mat-list-item href="#" routerLink="dashboard">
+        <mat-icon matListIcon>dashboard</mat-icon>
+        Dashboard
+      </a>
+      <a mat-list-item href="#" routerLink="test1">
+        <mat-icon matListIcon>notes</mat-icon>
+        Test
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="lighter-theme sidenav-content">
+    <mat-toolbar color="primary">  
+      <mat-toolbar-row></mat-toolbar-row>
+      <mat-toolbar-row></mat-toolbar-row>
+      <mat-toolbar-row></mat-toolbar-row>
+    </mat-toolbar>
+
+    <container>
+      <ng-content></ng-content>
+    </container>
+
+    <mat-toolbar color="primary">  
+      <mat-toolbar-row></mat-toolbar-row>
+      <mat-toolbar-row></mat-toolbar-row>
+      <mat-toolbar-row></mat-toolbar-row>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
