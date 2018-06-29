@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   `
     <div fxLayout="row" fxFlexFill fxLayoutAlign="center center">
       <div class="grid-container" 
-        fxFlex.gt-xs="400px"
-        fxFlex.gt-sm="660px"
-        fxFlex.gt-md="1080px"
-        fxFlex.gt-lg="1720px">
+        fxFlex.gt-xs="300px"
+        fxFlex.gt-sm="560px"
+        fxFlex.gt-md="980px"
+        fxFlex.gt-lg="1620px">
         <ng-content></ng-content>
       </div>
     </div>
