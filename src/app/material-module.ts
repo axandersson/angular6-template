@@ -7,7 +7,10 @@ import {
   MatSidenavModule, 
   MatIconModule, 
   MatListModule, 
-  MatDividerModule
+  MatDividerModule,
+  MatGridListModule,
+  MatMenuModule,
+  MatCardModule
 } from '@angular/material';
 
 /**
@@ -19,11 +22,13 @@ import {
     MatButtonModule, 
     MatCheckboxModule,    
     MatToolbarModule,
-    MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatCardModule
   ],
 })
 export class MaterialModule { }

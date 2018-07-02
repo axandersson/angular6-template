@@ -12,7 +12,6 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component';
 import { SidenavService } from './shared/sidenav/sidenav.service';
 import { SidenavDirective } from './shared/sidenav/sidenav.directive';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { ContainerComponent } from './shared/container/container.component';
 
 @NgModule({
@@ -29,12 +28,7 @@ import { ContainerComponent } from './shared/container/container.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MaterialModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
+    MaterialModule
   ],
   providers: [
     SidenavService
