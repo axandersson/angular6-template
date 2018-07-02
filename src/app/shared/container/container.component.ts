@@ -5,16 +5,17 @@ import { Component, OnInit } from '@angular/core';
   template:
   `
     <div fxLayout="row" fxFlexFill fxLayoutAlign="center center">
-      <div class="grid-container" 
-        fxFlex.gt-xs="300px"
-        fxFlex.gt-sm="560px"
-        fxFlex.gt-md="980px"
-        fxFlex.gt-lg="1620px">
+      <div class="grid-container" fxFlex> 
         <ng-content></ng-content>
       </div>
     </div>
   `,
-  styles: ['.grid-container {margin: 6em 2em 6em 2em;min-height: calc(100vh - 540px);}']
+  styles: [
+    `.grid-container {
+      margin: 6em 2em 6em 2em;
+      min-height: calc(100vh - 540px);
+    }`
+]
 })
 export class ContainerComponent implements OnInit {
 
